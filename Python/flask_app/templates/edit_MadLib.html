@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Mad Libs</title>
+    <link rel="stylesheet" href="/static/css/edit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mad Libs - Edit</h1>
+        <nav class="nav-bar">
+            <a href="/">Storytime</a>
+            <a href="/new">Add</a>
+        </nav>
+        <div class="form">
+            <form action="/update/madlibs" method="POST">
+                <input type="hidden" name="id" value="{{edit.id}}"/>
+                <div class="form-group">
+                    <label for="your_name">Your Name: </label>
+                    <input type="text" name="your_name" value="{{edit.your_name}}"/>
+                </div>
+                <div class="form-group">
+                    <label fot="adjective">Adjective: </label>
+                    <input type="text" name="adjective" value="{{edit.adjective}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="adjective_2">Adjective:</label>
+                    <input type="text" name="adjective_2" value="{{edit.adjective_2}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="noun">Noun: </label>
+                    <input type="text" name="noun" value="{{edit.noun}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="noun_2">Noun: </label>
+                    <input type="text" name="noun_2" value="{{edit.noun_2}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="plural_noun">Plural Noun: </label>
+                    <input type="text" name="plural_noun" value="{{edit.plural_noun}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="game">Game: </label>
+                    <input type="text" name="game" value="{{edit.game}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="plural_noun_2">Plural Noun: </label>
+                    <input type="text" name="plural_noun_2" value="{{edit.plural_noun_2}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="verb_ending_ING">Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING" value="{{edit.verb_ending_ING}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="verb_ending_ING2">Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING2" value="{{edit.verb_ending_ING2}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="plural_noun_3">Plural Noun: </label>
+                    <input type="text" name="plural_noun_3" value="{{edit.plural_noun_3}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="verb_ending_ING3">Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING3" value="{{edit.verb_ending_ING3}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="noun_3">Noun: </label>
+                    <input type="text" name="noun_3" value="{{edit.noun_3}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="plant">Plant: </label>
+                    <input type="text" name="plant" value="{{edit.plant}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="body_part">Part of the Body: </label>
+                    <input type="text" name="body_part" value="{{edit.body_part}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="place">Place: </label>
+                    <input type="text" name="place" value="{{edit.place}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="verb_ending_ING4">Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING4" value="{{edit.verb_ending_ING4}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="adjective_3">Adjective: </label>
+                    <input type="text" name="adjective_3" value="{{edit.adjective_3}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="number">Number: </label>
+                    <input type="number" name="number" value="{{edit.number}}"/>
+                </div>
+                <div class="form-group">
+                    <label for="plural_noun_4">Plural Noun: </label>
+                    <input type="text" name="plural_noun_4" value="{{edit.plural_noun_4}}"/>
+                </div>
+                <input type="submit" name="form-btn" value="Update"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

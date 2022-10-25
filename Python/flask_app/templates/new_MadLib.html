@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Mad Libs</title>
+    <link rel="stylesheet" href="/static/css/edit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mad Libs</h1>
+        <nav class="nav-bar">
+            <a href="/">Storytime</a>
+        </nav>
+        <div class="form">
+            <form action="/add/madlibs" method="POST">
+                <div class="form-group">
+                    <label for="your_name">Your Name: </label>
+                    <input type="text" name="your_name"/>
+                </div>
+                <div class="form-group">
+                    <label>Adjective: </label>
+                    <input type="text" name="adjective"/>
+                </div>
+                <div class="form-group">
+                    <label>Adjective:</label>
+                    <input type="text" name="adjective_2"/>
+                </div>
+                <div class="form-group">
+                    <label>Noun: </label>
+                    <input type="text" name="noun"/>
+                </div>
+                <div class="form-group">
+                    <label>Noun: </label>
+                    <input type="text" name="noun_2"/>
+                </div>
+                <div class="form-group">
+                    <label>Plural Noun: </label>
+                    <input type="text" name="plural_noun"/>
+                </div>
+                <div class="form-group">
+                    <label>Game: </label>
+                    <input type="text" name="game"/>
+                </div>
+                <div class="form-group">
+                    <label>Plural Noun: </label>
+                    <input type="text" name="plural_noun_2"/>
+                </div>
+                <div class="form-group">
+                    <label>Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING"/>
+                </div>
+                <div class="form-group">
+                    <label>Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING2"/>
+                </div>
+                <div class="form-group">
+                    <label>Plural Noun: </label>
+                    <input type="text" name="plural_noun_3"/>
+                </div>
+                <div class="form-group">
+                    <label>Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING3"/>
+                </div>
+                <div class="form-group">
+                    <label>Noun: </label>
+                    <input type="text" name="noun_3"/>
+                </div>
+                <div class="form-group">
+                    <label>Plant: </label>
+                    <input type="text" name="plant"/>
+                </div>
+                <div class="form-group">
+                    <label>Part of the Body: </label>
+                    <input type="text" name="body_part"/>
+                </div>
+                <div class="form-group">
+                    <label>Place: </label>
+                    <input type="text" name="place"/>
+                </div>
+                <div class="form-group">
+                    <label>Verb Ending in "-ING": </label>
+                    <input type="text" name="verb_ending_ING4"/>
+                </div>
+                <div class="form-group">
+                    <label>Adjective: </label>
+                    <input type="text" name="adjective_3"/>
+                </div>
+                <div class="form-group">
+                    <label>Number: </label>
+                    <input type="number" name="number"/>
+                </div>
+                <div class="form-group">
+                    <label>Plural Noun: </label>
+                    <input type="text" name="plural_noun_4"/>
+                </div>
+                <input type="submit" name="form-btn" value="Create"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

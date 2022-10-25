@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Home</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mad Libs</h1>
+        <nav class="nav-bar">
+            <a href="/new">Add</a>
+        </nav>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>By: </th>
+                        <th id="madlib_id"> </th>
+                        <th id="actions"> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for madlib in madlibs %}
+                        <tr>
+                            <td><a href="/madlibs/{{madlib.id}}">{{madlib.your_name}}</a></td>
+                            <td>
+                                <p>A vacation is when you take a trip to some {{madlib.adjective}} place</p>
+                                <p>with your {{madlib.adjective_2}} family. Usually you go to some place...</p>
+                            </td>
+                            <td>
+                                <a href="/edit/madlibs/{{madlib.id}}">Edit</a> 
+                                <a href="/delete/madlibs/{{madlib.id}}">Delete</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mad Libs</h1>
+        <nav class="nav-bar">
+            <a href="/">Storytime</a>
+            <a href="/new">Add</a>
+        </nav>
+        <div class="content">
+            <h2>By: <strong><u>{{madlib.your_name}}</u></strong></h2>
+            <p>A vacation is when you take a trip to some <strong><u>{{madlib.adjective}}</u></strong> place</p>
+            <p>with your <strong><u>{{madlib.adjective_2}}</u></strong> family. Usually you go to some place</p>
+            <p>that is near a/an <strong><u>{{madlib.noun}}</u></strong> or up on a/an <strong><u>{{madlib.noun_2}}</u></strong>.</p>
+            <p>A good vacation place is one where you can ride <strong><u>{{madlib.plural_noun}}</u></strong></p>
+            <p>or play <strong><u>{{madlib.game}}</u></strong> or go hunting for <strong><u>{{madlib.plural_noun_2}}</u></strong>. I like</p>
+            <p>to spend my time <strong><u>{{madlib.verb_ending_ING}}</u></strong> or <strong><u>{{madlib.verb_ending_ING2}}</u></strong>.</p>
+            <p>When parents go on a vacation, they spend their time eating</p>
+            <p>three <strong><u>{{madlib.plural_noun_3}}</u></strong> a day, and fathers play golf, and mothers</p>
+            <p>sit around <strong><u>{{madlib.verb_ending_ING3}}</u></strong>. Last summer, my little brother</p>
+            <p>fell in a/an <strong><u>{{madlib.noun_3}}</u></strong> and got poison <strong><u>{{madlib.plant}}</u></strong> all</p>
+            <p>over his <strong><u>{{madlib.body_part}}</u></strong>. My family is going to go to [the]</p>
+            <p><strong><u>{{madlib.place}}</u></strong>, and I will practice <strong><u>{{madlib.verb_ending_ING4}}</u></strong>. Parents</p>
+            <p>need vacations more than kids because parents are always very</p>
+            <p><strong><u>{{madlib.adjective_3}}</u></strong> and because they have to work <strong><u>{{madlib.number}}</u></strong></p>
+            <p>hours every dat all year making enough <strong><u>{{madlib.plural_noun_4}}</u></strong> to pay</p>
+            <p>for the vacation.</p>
+        </div>
+        <div class="actions">
+            <a href="/delete/madlibs/{{madlib.id}}">Delete</a> 
+            <a href="/edit/madlibs/{{madlib.id}}">Edit</a>
+        </div>
+    </div>
+</body>
+</html>
